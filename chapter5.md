@@ -1,5 +1,5 @@
 ---
-title: Chapter 5 — Mathematical Intuition for Language Processing
+title: Chapter 5
 nav: false
 ---
 
