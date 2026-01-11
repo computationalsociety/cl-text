@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NLP Preprocessing Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="preprocessing.css">
+</head>
+
+<body>
+
+<h1>NLP Preprocessing Demo</h1>
+<p class="subtitle">
+Tokenization, Normalization, Stemming, Lemmatization, and Word Formation
+</p>
+
+<textarea id="inputText">
+Running runners ran quickly to the banks.
+</textarea>
+
+<button onclick="runDemo()">Run Demo</button>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Normalization</h3>
+    <pre id="normalized"></pre>
+  </div>
+
+  <div class="card">
+    <h3>Tokenization</h3>
+    <pre id="tokens"></pre>
+  </div>
+
+  <div class="card">
+    <h3>Stemming</h3>
+    <pre id="stems"></pre>
+  </div>
+
+  <div class="card">
+    <h3>Lemmatization</h3>
+    <pre id="lemmas"></pre>
+  </div>
+
+  <div class="card full">
+    <h3>Word Formation (Morphological View)</h3>
+    <pre id="formation"></pre>
+  </div>
+
+</div>
+
+<script src="preprocessing.js"></script>
+</body>
+</html>
