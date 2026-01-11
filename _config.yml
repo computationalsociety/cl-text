@@ -1,6 +1,20 @@
 title: Introduction to Computational Linguistics
-theme: minima
-markdown: kramdown
+author: Muhammad Shoaib Tahir
+description: >
+  A book-oriented presentation of Computational Linguistics emphasizing
+  linguistic intuition, clarity, and accessibility.
 
-include:
-  - assets
+theme: minima
+
+# Show ONLY Home in the top navigation bar
+header_pages:
+  - index.md
+
+# Optional but recommended for clean URLs
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# GitHub Pages safe settings
+plugins:
+  - jekyll-feed
