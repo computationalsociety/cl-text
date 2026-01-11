@@ -1,6 +1,9 @@
 # 5. Mathematical Intuition for Language Processing
 
-Figure 5.1 — Linguistic Intuition and Mathematical Formalization
+<a id="fig5-1"></a>
+**Figure 5.1: Linguistic Intuition and Mathematical Formalization**
+
+![Figure 5.1: Linguistic Intuition and Mathematical Formalization](figures/fig5.1.png)
 
 Figure description:
 This figure shows two conceptual spaces. On the left are linguistic notions such as frequency, expectation, preference, and similarity. On the right are their mathematical counterparts, such as counts, probabilities, and numerical representations. Arrows connect each linguistic intuition to its formal mathematical expression.
