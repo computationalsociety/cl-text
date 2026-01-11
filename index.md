@@ -42,15 +42,4 @@ The chapters emphasize:
 
 ---
 
-## Intended Audience
-
-These notes are intended for:
-
-- Linguistics students  
-- Computational linguistics beginners  
-- Language researchers exploring computational methods  
-- Readers seeking intuition before formal mathematics  
-
----
-
 © Muhammad Shoaib Tahir
