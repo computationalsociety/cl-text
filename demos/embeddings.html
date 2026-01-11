@@ -2,16 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Word Embedding Demo</title>
-  <link rel="stylesheet" href="../assets/style.css">
+  <title>Word Embedding Similarity Demo</title>
   <style>
-    body { font-family: serif; max-width: 900px; margin: auto; padding: 2rem; }
-    input { padding: 0.4rem; margin-right: 0.5rem; }
-    button { padding: 0.4rem 0.8rem; }
-    .result { margin-top: 1.5rem; }
-    .close { color: green; font-weight: bold; }
-    .far { color: darkred; font-weight: bold; }
-    pre { background: #f7f7f7; padding: 0.8rem; overflow-x: auto; }
+    body {
+      font-family: Georgia, serif;
+      max-width: 900px;
+      margin: 40px auto;
+      line-height: 1.6;
+    }
+
+    input {
+      padding: 6px;
+      width: 160px;
+      margin-right: 8px;
+    }
+
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .close {
+      color: green;
+    }
+
+    .far {
+      color: darkred;
+    }
+
+    pre {
+      background: #f7f7f7;
+      padding: 10px;
+      overflow-x: auto;
+    }
+
+    canvas {
+      margin-top: 20px;
+      border: 1px solid #ddd;
+    }
   </style>
 </head>
 
@@ -20,15 +53,26 @@
 <h1>Word Embedding Similarity Demo</h1>
 
 <p>
-Enter two or three words to explore how word embeddings represent similarity in vector space.
+Enter two words to explore how word embeddings represent similarity in vector space.
 This demo uses pretrained embeddings and cosine similarity.
 </p>
 
-<input id="word1" placeholder="word 1">
-<input id="word2" placeholder="word 2">
+<input id="word1" placeholder="Word 1" value="home">
+<input id="word2" placeholder="Word 2" value="house">
 <button onclick="compare()">Compare</button>
 
-<div class="result" id="output"></div>
+<div class="result" id="similarity"></div>
+
+<h3>Embedding Values (first 10 dimensions)</h3>
+<pre id="embeddings"></pre>
+
+<h3>Visualization</h3>
+
+<h4>Embedding Dimension Comparison</h4>
+<canvas id="barChart" width="750" height="250"></canvas>
+
+<h4>2D Similarity Projection</h4>
+<canvas id="scatterPlot" width="500" height="400"></canvas>
 
 <script src="embeddings.js"></script>
 </body>
