@@ -37,7 +37,7 @@ The chapters emphasize:
 ## Chapters
 
 ### Chapter 5
-- **[Mathematical Intuition for Language Processing](chapter1.html)**  
+- **[Mathematical Intuition for Language Processing](chapter5.html)**  
   Understanding frequency, probability, smoothing, and vector representations through intuitive explanations and visual examples.
 
 ---
