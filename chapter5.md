@@ -110,6 +110,10 @@ Distance between vectors reflects similarity in meaning or usage.
 > 🔎 **Interactive Demo**  
 > Try an interactive word-embedding demo where you can enter words and see how close they are in vector space:  
 > **[Open Word Embedding Demo](demos/embeddings.html)**
+To make vector representations concrete, an interactive demo is provided.
+Readers can enter words and inspect their embeddings and cosine similarity.
+This demonstrates how semantic similarity emerges from geometric proximity in vector space.
+
 ---
 
 ### Chapter Summary
