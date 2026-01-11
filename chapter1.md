@@ -1,4 +1,4 @@
-#5.MATHEMATICAL INTUITION FOR LANGUAGE PROCESSING
+# 5. Mathematical Intuition for Language Processing
 
 Figure 5.1 — Linguistic Intuition and Mathematical Formalization
 
