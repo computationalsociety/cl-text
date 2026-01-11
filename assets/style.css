@@ -1,4 +1,8 @@
-/* Reduce excessive left/right space in Minima */
-.page-content .wrapper {
-  max-width: 1100px;
+.author-name {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
 }
