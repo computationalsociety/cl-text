@@ -54,6 +54,10 @@ The following interactive demos accompany specific chapters of the book and are 
   Interactive illustration of normalization, tokenization, stemming, lemmatization, and basic word formation  
   *(Related to Chapter 7: Morphology and Word Formation)*
 
+- **[Syntax, Treebanks, and Annotation Demo](demos/syntax.html)**  
+  Explore constituency structure, dependency relations, and treebank-style linguistic annotation, illustrating how syntactic knowledge is represented and analyzed computationally  
+  *(Related to Chapter 8: Morphology and Syntax)*
+
 ---
 
 © Muhammad Shoaib Tahir
