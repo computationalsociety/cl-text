@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Syntax and Annotation Demo</title>
+  <title>Syntax, Treebanks, and Annotation Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="syntax.css">
 </head>
@@ -11,51 +11,45 @@
 
 <nav style="margin-bottom: 30px; font-size: 15px;">
   <a href="../chapter7.html">Chapter 8 — Morphology and Syntax</a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
+  &nbsp;|&nbsp;
   <a href="../index.html">Home</a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="./">Interactive Demonstration</a>
+  &nbsp;|&nbsp;
+  <a href="./">Interactive Demonstrations</a>
 </nav>
 
-<h1>Syntax, Treebanks, and Annotation Demo</h1>
+<h1>Syntax, Treebanks, and Linguistic Annotation</h1>
 
 <p class="subtitle">
-Illustrating constituency structure, dependency relations, and linguistic annotation
+Explore how a single sentence can be represented through multiple syntactic
+and annotation frameworks.
 </p>
 
-<textarea id="sentence">
-The small child saw the dog
-</textarea>
+<label><b>Select Example Sentence:</b></label>
+<select id="examples" onchange="loadExample()">
+  <option>The small child saw the dog</option>
+  <option>She gave the book to the teacher</option>
+  <option>The cat sat on the mat</option>
+</select>
 
-<button onclick="analyze()">Analyze Sentence</button>
+<br><br>
 
-<div class="grid">
+<textarea id="sentence"></textarea>
 
-  <div class="card">
-    <h3>Constituency Structure</h3>
-    <pre id="constituency"></pre>
-  </div>
-
-  <div class="card">
-    <h3>Dependency Structure</h3>
-    <pre id="dependency"></pre>
-  </div>
-
-  <div class="card">
-    <h3>Annotated Tokens (Treebank Style)</h3>
-    <pre id="annotation"></pre>
-  </div>
-
-  <div class="card full">
-    <h3>What Is a Treebank?</h3>
-    <p>
-      A <b>treebank</b> is a corpus in which sentences are manually annotated
-      with syntactic structure, such as constituency trees or dependency relations.
-      These annotations are used to train and evaluate parsing models.
-    </p>
-  </div>
-
+<div class="controls">
+  <button onclick="showConstituency()">Constituency</button>
+  <button onclick="showDependency()">Dependency</button>
+  <button onclick="showAnnotation()">Annotation</button>
+  <button onclick="showTreebank()">Treebank Data</button>
 </div>
+
+<div class="output">
+  <pre id="display"></pre>
+</div>
+
+<p class="note">
+<b>Note:</b> All analyses shown here are illustrative and reflect
+human-style linguistic annotation rather than automatic parsing.
+</p>
 
 <script src="syntax.js"></script>
 </body>
